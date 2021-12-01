@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #6751d6 0%, #174aa3 100%);
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    height: 600px;
+    width: 285px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.1px);
+    -webkit-backdrop-filter: blur(0.1px);
+    border: 7px solid rgba(255, 255, 255, 0.5);
+}
+
+.title h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.question{
+    margin-top: 35px;
+    padding: 10px 20px;
+}
+.question h3{
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.box .percent svg circle {
+    height: 20px;
+    width: 20px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #df00a7;
+    background: transparent;
+    transform: translate(85px, 35px);
+    stroke-dasharray: 20;
+    stroke-linecap: round;
+    stroke-dasharray: 272;
+    stroke-dashoffset: 612;
+
+}
+
+.box .percent svg circle:nth-child(1) {
+    stroke: #fff;
+}
+.number{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.box .percent svg circle:nth-child(1){
+    stroke: #fff;
+    stroke-dasharray: 110;
+    stroke-width: 1;
+    stroke-dashoffset: 20;
+}
+.answers{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.option{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+h1{
+    background: #000;
+    color: white;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+h4{
+    font-size: 16px;
+    color: #000;
+    margin-top: 10px;
+}
